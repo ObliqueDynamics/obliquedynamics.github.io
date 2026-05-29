@@ -9,22 +9,33 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #0d1117;
     color: #e6edf3;
+
+    background-image: url('spacegalaxy.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
 }
 
 header {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(180deg,#161b22,#0d1117);
-    border-bottom: 1px solid #30363d;
-}
 
+    background: rgba(13,17,23,0.75);
+    backdrop-filter: blur(3px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
 .logo {
-    max-width: 300px;
-    width: 80%;
+    max-width: 500px;
+    width: 90%;
     height: auto;
     margin-bottom: 20px;
+
+    filter: drop-shadow(0 0 25px rgba(100,180,255,0.35));
 }
 
 h1 {
@@ -46,9 +57,12 @@ section {
 }
 
 .card {
-    background: #161b22;
-    border: 1px solid #30363d;
+    background: rgba(22,27,34,0.82);
+    backdrop-filter: blur(4px);
+
+    border: 1px solid rgba(255,255,255,0.12);
     border-radius: 12px;
+
     padding: 25px;
     margin-bottom: 25px;
 }
@@ -61,8 +75,12 @@ section {
 footer {
     text-align: center;
     padding: 30px;
+
+    background: rgba(13,17,23,0.75);
+    backdrop-filter: blur(3px);
+
     color: #8b949e;
-    border-top: 1px solid #30363d;
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 a {
